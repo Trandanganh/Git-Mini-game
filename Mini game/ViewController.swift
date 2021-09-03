@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerImageView: UIImageView!
     
     func again() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [self] in
             Lbl.text = "Chơi lại"
             comImageView.image = #imageLiteral(resourceName: "ANH-3")
             playerImageView.image = #imageLiteral(resourceName: "ANH-3")
@@ -33,9 +33,9 @@ class ViewController: UIViewController {
         comImageView.image = [#imageLiteral(resourceName: "Keo"),#imageLiteral(resourceName: "Bua"),#imageLiteral(resourceName: "Giay")][Int.random(in: 0 ... 2)]
         playerImageView.image = #imageLiteral(resourceName: "Keo")
         if comImageView.image == #imageLiteral(resourceName: "Giay") {
-            Lbl.text = "Thuý Hiền thắng"
+            Lbl.text = "Bạn thắng"
         } else if comImageView.image == #imageLiteral(resourceName: "Bua") {
-            Lbl.text = "Thuý Hiền thua"
+            Lbl.text = "Bạn thua"
         }else {
             Lbl.text = "Hoà"
         }
@@ -46,9 +46,9 @@ class ViewController: UIViewController {
         comImageView.image = [#imageLiteral(resourceName: "Keo"),#imageLiteral(resourceName: "Bua"),#imageLiteral(resourceName: "Giay")][Int.random(in: 0 ... 2)]
         playerImageView.image = #imageLiteral(resourceName: "Bua")
         if comImageView.image == #imageLiteral(resourceName: "Keo") {
-            Lbl.text = "Thuý Hiền thắng"
+            Lbl.text = "Bạn thắng"
         } else if comImageView.image == #imageLiteral(resourceName: "Giay") {
-            Lbl.text = "Thuý Hiền thua"
+            Lbl.text = "Bạn thua"
         }else {
             Lbl.text = "Hoà"
         }
@@ -59,9 +59,9 @@ class ViewController: UIViewController {
         comImageView.image = [#imageLiteral(resourceName: "Keo"),#imageLiteral(resourceName: "Bua"),#imageLiteral(resourceName: "Giay")][Int.random(in: 0 ... 2)]
         playerImageView.image = #imageLiteral(resourceName: "Giay")
         if comImageView.image == #imageLiteral(resourceName: "Bua") {
-            Lbl.text = "Thuý Hiền thắng"
+            Lbl.text = "Bạn thắng"
         } else if comImageView.image == #imageLiteral(resourceName: "Keo") {
-            Lbl.text = "Thuý Hiền thua"
+            Lbl.text = "Bạn thua"
         }else {
             Lbl.text = "Hoà"
         }
